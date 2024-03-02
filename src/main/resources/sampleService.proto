@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "pl.slabonart.epam_java_bs_2_1";
+
+service SampleService {
+    rpc GetMessage (GetMessageRequest) returns (GetMessageResponse) {}
+}
+
+message GetMessageRequest {
+    string message = 1;
+}
+
+message GetMessageResponse {
+    string message = 1;
+}
